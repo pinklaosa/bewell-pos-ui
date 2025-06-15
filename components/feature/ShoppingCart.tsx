@@ -14,7 +14,7 @@ interface DropdownOption {
 }
 
 const ShoppingCart: React.FC = () => {
-  const { state, removeItem, updateQuantity, removeBackOrderItem, updateBackOrderQuantity, getTotalItemQuantity, getAvailableStock, canAddToCart, updateDiscount, getDiscount, calculateDiscountedPrice } = useCart()
+  const { state, removeItem, updateQuantity, removeBackOrderItem, updateBackOrderQuantity, getAvailableStock, updateDiscount, getDiscount, calculateDiscountedPrice } = useCart()
   const [backOrderModal, setBackOrderModal] = useState<{ isOpen: boolean; item: any }>({
     isOpen: false,
     item: null

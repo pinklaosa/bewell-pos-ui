@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Search, Filter, X } from "lucide-react";
+import { Search, X } from "lucide-react";
 
 export interface FilterOptions {
   searchTerm: string;
@@ -167,7 +167,7 @@ const ProductFilter: React.FC<ProductFilterProps> = ({
           <div className="flex flex-wrap gap-2">
             {filters.searchTerm && (
               <span className="inline-flex items-center px-2 py-1 rounded-full text-xs bg-teal-100 text-teal-800">
-                Search: "{filters.searchTerm}"
+                Search: {filters.searchTerm}
               </span>
             )}
             {filters.selectedCategory && (
